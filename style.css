@@ -1,54 +1,57 @@
-*{
+* {
     margin: 0;
 }
 
-body{
+body {
     font-family: arial, sans-serif;
 }
 
 span {
     color: blue;
 }
+
 /* nav */
-header{
+header {
     top: 0;
     z-index: 1000;
     position: sticky;
 }
-nav{
+
+nav {
     background-color: yellow;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding:0.5rem 2rem;
-   
+    padding: 0.5rem 2rem;
+
 }
 
-.logo{
+.logo {
     margin-right: auto;
     font-weight: 800;
 }
 
-.nav-links{
+.nav-links {
     display: flex;
     gap: 20px;
     list-style: none;
 }
 
-.nav-links li a{
+.nav-links li a {
     color: black;
     text-decoration: none;
     font-weight: 700;
 }
 
-.nav-links li a:hover{
+.nav-links li a:hover {
     color: blue;
     border-bottom: 3px solid blue;
 }
+
 /* nav-end */
 
 /* home */
-.home{
+.home {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,46 +63,48 @@ nav{
     height: 300px;
 }
 
-.home span{
+.home span {
     color: white;
     font-weight: 800;
     letter-spacing: 0.1rem;
     margin: 0px 0.2rem;
 }
+
 /* home-end */
 
 /* Profil */
-.profil{
+.profil {
     margin-top: 2rem;
     background-color: whitesmoke;
     padding: 2rem 1rem;
     text-align: center;
 }
 
-.profil-container{
+.profil-container {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.profil-img{
+.profil-img {
     width: 210px;
     height: 220px;
     border-radius: 50%;
     overflow: hidden;
     border: 2px solid black;
     background-color: white;
+    transition: 0.5s ease;
 }
 
-.profil-img:hover{
+.profil-img:hover {
     transform: translateX(5px);
 }
 
-.profil-img img{
+.profil-img img {
     height: 250px;
 }
 
-.profil-text{
+.profil-text {
     background-color: lightgray;
     width: 50%;
     height: 100px;
@@ -109,34 +114,39 @@ nav{
     justify-content: center;
     text-align: left;
     border-radius: 25px;
+    transition: transform 0.5s ease;
 }
 
-.profil-text:hover{
-    transform: translateX(-20px);
+.profil-text:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 25px rgba(255, 255, 255, 0.4);
 }
 
-.profil h1{
-    
+.profil h1 {
+
     font-size: 30px;
     margin-bottom: 1rem;
 }
 
-.profil p{
+.profil p {
     font-size: 18px;
 }
+
 /* profil-end */
 
 /* skill */
-.skill{
+.skill {
     margin-top: 1rem;
     padding: 1rem;
     text-align: center;
 }
-.skill h1{
+
+.skill h1 {
     font-size: 30px;
     margin-bottom: 1.5rem;
 }
-.skill .card-container{
+
+.skill .card-container {
     display: flex;
     justify-content: center;
     gap: 8px;
@@ -147,25 +157,86 @@ nav{
     padding: 1rem;
     border-radius: 10px;
     width: 300px;
-}
-.skill .card-container .card:hover{
-    transform: translatey(-5px)
+    transition: box-shadow 0.5s, 0.5s ease;
 }
 
-.skill .card-container .card h2{
+.skill .card-container .card:hover {
+    transform: translatey(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.skill .card-container .card h2 {
     margin-bottom: 1rem;
     font-weight: 700;
 }
+
 /* skill-end */
 
+/* Sertifikat */
+.sertifikat {
+    padding: 2em;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.sertifikat .container {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sertifikat .container .img {
+    width: 400px;
+}
+
+.sertifikat img {
+    width: 100%;
+}
+
+/* project */
+.project {
+    padding: 2em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pr-container {
+    display: flex;
+    margin-top: 1em;
+    gap: 2em;
+}
+
+.project .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.project .container .img {
+    width: 400px;
+}
+
+.project img {
+    width: 100%;
+}
+
+.others {
+    margin: 2em;
+}
+
 /* contact */
-.contact{
+.contact {
     margin-top: 1rem;
-    padding-top: 2rem ;
+    padding-top: 2rem;
     padding: 1rem;
     padding-bottom: 2rem;
     text-align: center;
-    background-color: whitesmoke;  
+    background-color: whitesmoke;
 }
 
 .contact h1 {
@@ -182,6 +253,7 @@ nav{
 .contact-img img {
     width: 50px;
 }
+
 .contact-container {
     font-size: 20px;
     display: flex;
@@ -190,17 +262,18 @@ nav{
     background-color: lightgray;
     border-radius: 22px;
 }
+
 /* contact-end */
 
 /* footert */
 
-footer{
+footer {
     background-color: green;
     padding: 1rem;
     text-align: center;
 }
 
-footer h3{
+footer h3 {
     color: white;
 }
 
